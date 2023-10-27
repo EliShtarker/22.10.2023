@@ -1,8 +1,1 @@
-at homework number one there is link in music 
-gaming to my steam account kryat gat  
-cooking and building there is a mini game i made out of learing on my own in youtube
-the arrowkeys are working in the snake game with even listiner
-and made 2 lines that show one if u eat yourself and one if you hit the walls
-and a reset button to refresh the page ones you fail.
-
-at home work number two i was thinking of adding a little css but one to hear your opinion on the topic
+here is all of my ecom homework collection.
