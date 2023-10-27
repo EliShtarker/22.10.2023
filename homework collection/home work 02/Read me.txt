@@ -1,0 +1,3 @@
+home work number 2 i added alot of css to it to make alot of hover effects and made it look more atractive
+you asked me to let the guy that vist the site know i made an <a> some where so i did something
+i added js to the story and when someone hover on my paragraph the size change and the innerHTML Change as well.
