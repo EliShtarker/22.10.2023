@@ -1,7 +1,6 @@
-Was not sure if thats what you've asked for
-but did what i understood 
-
-i added links to each of my hobbies
-
-thank you for watching my project and i wish you 
-an amazin day. 
+The first home work done with extra stuff like 
+adding link to all of my hobbies
+city location in the city 
+in my hobbies (building) added something old i was working on form youtube.
+a snake game that fallow even key listener
+and 2 death lines that show in popup.
