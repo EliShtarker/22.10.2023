@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid</title>
+</head>
+<style>
+    .the_header { grid-area: header; }
+    .the_copy { grid-area: _copy; }
+    .the_section { grid-area: section; }
+    .the_contact { grid-area: contact; }
+    .the_h1 { grid-area: _h1; }
+    .the_h2 { grid-area: _h2; }
+    .the_h3 { grid-area: _h3; }
+    
+    .grid-container {
+        display: grid;
+        height:90vh;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 0.4fr 1.4fr 1.2fr 0.1fr;
+        grid-template-areas: 
+            'header header header'
+            'section section contact'
+            '_h1 _h2 _h3'
+            '_copy _copy _copy';
+        gap: 1px;
+        background-color: white;
+        padding: 10px;
+    }
+    .grid-container > div {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        border: 1px solid;
+        padding: 20px 0;
+        margin: 5px;
+        font-size: 30px;
+    }
+    ul{
+        display: inline-block;
+        display: center;
+    }
+    
+</style>
+<body>
+    <br />
+    <div class="grid-container">
+        <div class="the_header"><b>Main Header</b></div>
+        <div class="the_section" style="padding:20px 150px"><b>Section Header</b><br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet consequatur atque vitae minima quam, dolore error dignissimos perspiciatis molestias ab sapiente consequuntur accusantium, inventore recusandae at quia excepturi sed culpa laudantium ratione perferendis fuga dicta! Culpa, ut odio id non atque distinctio iusto facilis maxime illo sapiente, eius ratione.</div>
+        <div class="the_contact"><b>Contacts Us</b><br /><br />
+<ul>
+    <li>Compeny name</li>
+    <li>22 Dizingof Tel-Aviv</li>
+    <li>Company@gmail.com</li>
+    <li>4444-5555-4444-5555</li>
+</ul>
+        </div>
+        <div class="_h1"><b>Heading 1</b><br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui blanditiis autem totam ut explicabo. Possimus rem sequi explicabo culpa officiis.</div>
+        <div class="_h2"><b>Heading 2</b><br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui blanditiis autem totam ut explicabo. Possimus rem sequi explicabo culpa officiis.</div>
+        <div class="_h3"><b>Heading 3</b><br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui blanditiis autem totam ut explicabo. Possimus rem sequi explicabo culpa officiis.</div>
+        <div class="the_copy">Copyright &copy; 2023</div>
+    </div>
+</body>
+</html>
