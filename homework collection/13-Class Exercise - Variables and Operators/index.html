@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    span{
+        font-size: larger;
+        font-weight: bolder;
+        font-style:italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+<body>
+<p>
+    <h3>Here are the results along with explanations for each expression:</h3>
+    <span>(1)=</span> 4 < 9 - True
+    <br /><br />
+    <span>(2)=</span> (23+4)(7+7) - This seems to be a missing operator. If you mean multiplication, it would be (23+4) * (7+7) = 27 * 14 = 378.
+    <br /><br />
+    <span>(3)=</span> 18+18 - 36
+    <br /><br />
+    <span>(4)=</span> 10 == 10 - True
+    <br /><br />
+    <span>(5)=</span> 10 == 10 && 20 == 30 - False
+    <br /><br />
+    <span>(6)=</span> 10 == 10 20 == 30 - This seems to be a syntax error. It should be 10 == 10 && 20 == 30.
+    <br /><br />
+    <span>(7)=</span> 20 == 30 10 == 10 - True
+    <br /><br />
+    <span>(8)=</span> 13 - This is not a comparison. If you're asking if 13 is true, it would be considered truthy.
+    <br /><br />
+    <span>(9)=</span> 3 - This is not a comparison. If you're asking if 3 is true, it would be considered truthy.
+    <br /><br />
+    <span>(10)=</span> (3320) && (2 < 12) && 10 - This is an AND operation. It evaluates to 10.
+    <br /><br />
+    <span>(11)=</span> true && true - True
+    <br /><br />
+    <span>(12)=</span> true && false - False
+    <br /><br />
+    <span>(13)=</span> true false - This is a syntax error. It should be true && false.
+    <br /><br />
+    <span>(14)=</span> false true - This is a syntax error. It should be false && true.
+    <br /><br />
+    <span>(15)=</span> (110) && (10) - This is an AND operation. It evaluates to 10.
+    <br /><br />
+    <span>(16)=</span> (110) && (110) - This is an AND operation. It evaluates to 110.
+    <br /><br />
+    <span>(17)=</span> 5 != 5 && 5 != 5 - False
+    <br /><br />
+    <span>(18)=</span> 2 === 2 3 == 3 - This is a syntax error. It should be 2 === 2 && 3 == 3.
+    <br /><br />
+    <span>(19)=</span> 2 === 2 && 3 == 3 - True
+    <br /><br />
+    <span>(20)=</span> 40 <= 30 && 1 >= 4 - False
+    <br /><br />
+    <span>(21)=</span> 13 >= 3 47 >= 5 - This is a syntax error. It should be 13 >= 3 && 47 >= 5.
+</p>
+<h3>In summary:</h3> 
+<span>(1)= </span>True
+<br /><br />
+<span>(2)= </span>378 (Assuming multiplication)
+<br /><br />
+<span>(3)= </span>36
+<br /><br />
+<span>(4)= </span>True
+<br /><br />
+<span>(5)= </span>False
+<br /><br />
+<span>(6)= </span>Syntax error
+<br /><br />
+<span>(7)= </span>True
+<br /><br />
+<span>(8)= </span>Truthy
+<br /><br />
+<span>(9)= </span>Truthy
+<br /><br />
+<span>(10)= </span>10 (Truthy)
+<br /><br />
+<span>(11)= </span>True
+<br /><br />
+<span>(12)= </span>False
+<br /><br />
+<span>(13)= </span>Syntax error
+<br /><br />
+<span>(14)= </span>Syntax error
+<br /><br />
+<span>(15)= </span>10 (Truthy)
+<br /><br />
+<span>(16)= </span>110 (Truthy)
+<br /><br />
+<span>(17)= </span>False
+<br /><br />
+<span>(18)= </span>Syntax error
+<br /><br />
+<span>(19)= </span>True
+<br /><br />
+<span>(20)= </span>False
+<br /><br />
+<span>(21)= </span>Syntax error
+<hr>
+<h3>Here are the results along with explanations for each expression:</h3>
+<p>   
+<span>(1)=</span> a + b && c + d: True. (10 + 5) evaluates to 15, and (8 + 3) evaluates to 11. Both values are truthy, so the result is the second operand, which is 11.
+    <br /><br />
+    <span>(2)=</span> a >= b || c > d: True. The first part (a >= b) is true, so the whole expression is true. The second part (c > d) is not evaluated because the first part is true.
+    <br /><br />
+    <span>(3)=</span> a >= b || c < d: True. The first part (a >= b) is true, so the whole expression is true. The second part (c < d) is not evaluated because the first part is true.
+    <br /><br />
+    <span>(4)=</span> a === b && c <= d: False. The first part (a === b) is false, so the whole expression is false. The second part (c <= d) is not evaluated because the first part is false.
+    <br /><br />
+    <span>(5)=</span> true && a + b + c + d: True. The whole expression is true because it's an AND operation with true as the first operand.
+    <br /><br />
+    <span>(6)=</span> a != b: True. The inequality is true because a (10) is not equal to b (5).
+    <br /><br />
+    <span>(7)=</span> a != b && a <= c || a <= b && true: True. The first part (a != b && a <= c) is true, so the whole expression is true. The second part (a <= b && true) is not evaluated because the first part is true.
+    <br /><br />
+    <span>(8)=</span> a != b && a <= c || a <= b || false: True. The first part (a != b && a <= c) is true, so the whole expression is true. The second part (a <= b) is not evaluated because the first part is true. The third part (false) is not evaluated because the second part is true.
+    <br /><br />
+    <span>(9)=</span> a % b == 0 && c * d == 1: False. The first part (a % b == 0) is false because 10 % 5 is not equal to 0. The second part (c * d == 1) is also false because 8 * 3 is not equal to 1.
+    <br /><br /></p> 
+    <h3>In summary:</h3> 
+    <p>
+    <span>(1)=</span> True
+    <br /><br />
+    <span>(2)=</span> True
+    <br /><br />
+    <span>(3)=</span> True
+    <br /><br />
+    <span>(4)=</span> False
+    <br /><br />
+    <span>(5)=</span> True
+    <br /><br />
+    <span>(6)=</span> True
+    <br /><br />
+    <span>(7)=</span> True
+    <br /><br />
+    <span>(8)=</span> True
+    <br /><br />
+    <span>(9)=</span> False
+</p>
+
+
+
+    <script>
+        debugger;
+let a = 10;
+let b = 5;
+let c = 8;
+let d = 3;
+
+console.log("1. a + b && c + d:", a + b && c + d, "   // Result of the expression (a + b) && (c + d)");
+
+console.log("2. a >= b || c > d:", a >= b || c > d, "   // Result of the expression (a >= b) || (c > d)");
+
+console.log("3. a >= b || c < d:", a >= b || c < d, "   // Result of the expression (a >= b) || (c < d)");
+
+console.log("4. a === b && c <= d:", a === b && c <= d, "   // Result of the expression (a === b) && (c <= d)");
+
+console.log("5. true && a + b + c + d:", true && a + b + c + d, "   // Result of the logical AND operation");
+
+console.log("6. a != b:", a != b, "   // Result of the inequality (a != b)");
+
+console.log("7. a != b && a <= c || a <= b && true:", a != b && a <= c || a <= b && true, "   // Result of the complex expression");
+
+console.log("8. a != b && a <= c || a <= b || false:", a != b && a <= c || a <= b || false, "   // Result of the complex expression");
+
+console.log("9. a % b == 0 && c * d == 1:", a % b == 0 && c * d == 1, "   // Result of the complex expression");
+
+
+//coment space
+
+console.log("1. 4 < 9:", 4 < 9, "   // 4 is less than 9");
+
+console.log("2. (23+4)*(7+7):", (23+4)*(7+7), "   // Result of the expression (23+4)*(7+7)");
+
+console.log("3. 18+18:", 18+18, "   // Sum of 18 and 18");
+
+console.log("4. 10 == 10:", 10 == 10, "   // 10 is equal to 10");
+
+console.log("5. 10 == 10 && 20 == 30:", 10 == 10 && 20 == 30, "   // 10 is equal to 10, but 20 is not equal to 30");
+
+console.log("6. 10 == 10 && 20 == 30:", 10 == 10 && 20 == 30, "   // 10 is equal to 10, but 20 is not equal to 30");
+
+console.log("7. 20 == 30 && 10 == 10:", 20 == 30 && 10 == 10, "   // 20 is not equal to 30, but 10 is equal to 10");
+
+console.log("8. 13:", 13, "   // 13 is considered truthy");
+
+console.log("9. 3:", 3, "   // 3 is considered truthy");
+
+console.log("10. (3320) && (2 < 12) && 10:", (3320) && (2 < 12) && 10, "   // Result of the logical AND operation");
+
+console.log("11. true && true:", true && true, "   // Both operands are true");
+
+console.log("12. true && false:", true && false, "   // One operand is false");
+
+console.log("13. true && false:", true && false, "   // One operand is false");
+
+console.log("14. false && true:", false && true, "   // One operand is false");
+
+console.log("15. (110) && (10):", (110) && (10), "   // Result of the logical AND operation");
+
+console.log("16. (110) && (110):", (110) && (110), "   // Result of the logical AND operation");
+
+console.log("17. 5 != 5 && 5 != 5:", 5 != 5 && 5 != 5, "   // Both operands are false");
+
+console.log("18. 2 === 2 && 3 == 3:", 2 === 2 && 3 == 3, "   // Both operands are true");
+
+console.log("19. 2 === 2 && 3 == 3:", 2 === 2 && 3 == 3, "   // Both operands are true");
+
+console.log("20. 40 <= 30 && 1 >= 4:", 40 <= 30 && 1 >= 4, "   // Both operands are false");
+
+console.log("21. 13 >= 3 && 47 >= 5:", 13 >= 3 && 47 >= 5, "   // Both operands are true");
+
+
+
+
+    </script>
+</body>
+
+</html>
